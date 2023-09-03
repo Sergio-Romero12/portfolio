@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, SectionButton } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
@@ -15,9 +15,14 @@ const Hero = (props) => (
       <SectionText>
         I created this site to show who I am and what I have done in a more entertaining way. If you are interested, just scroll down and discover my journey.
       </SectionText>
-      <form method="get" action="#contact">
-        <Button>Contact me</Button>
-      </form>
+      <SectionButton>
+        <form method="get" action="/Cv_SergioRomeroDePablo_en.pdf" target="_blank">
+          <Button type="submit">Download CV<br/>in English</Button>
+        </form>
+        <form method="get" action="/Cv_SergioRomeroDePablo_es.pdf" target="_blank">
+          <Button type="submit">Download CV<br/>in Spanish</Button>
+        </form>
+      </SectionButton>
     </LeftSection>
   </Section>
 );

@@ -31,7 +31,7 @@ export const Div1 = styled.div`
   flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: 1 / 5 / 1 / 5;
   }
 `;
 export const Div2 = styled.div`
@@ -40,18 +40,17 @@ export const Div2 = styled.div`
   justify-content: space-around;
   margin-top: 17px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 1 / 3 / 6;
   }
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
-  display:flex;
-  align-items: center;
+  position: absolute;
   right: 0;
+  top: 0;
+  margin-top: 20px;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 4 / 3 / 6;
-    margin-left: 150px;
-    right: 0;
+    margin-top: 10px;
+    left: 0;
   }
 `;
 

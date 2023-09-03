@@ -15,6 +15,22 @@ export const projects = [
     tags: ['Html', 'CSS', 'JavaScript'],
     id: 1,
   },
+  {
+    title: 'Web calculator',
+    description:"A simple website where a calculator is implemented",
+    image: '/images/3.png',
+    source: 'https://github.com/Sergio-Romero12/web_calculator',
+    tags: ['Html', 'CSS', 'JavaScript'],
+    id: 2,
+  },
+  {
+    title: 'Starbucks home page recreation',
+    description:"A recreation of Starbuscks home page using only HTML and CSS",
+    image: '/images/4.png',
+    source: 'https://github.com/Sergio-Romero12/my_starbucks',
+    tags: ['Html', 'CSS'],
+    id: 3,
+  },
 ];
 
 export const TimeLineData = [

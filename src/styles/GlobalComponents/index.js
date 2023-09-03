@@ -67,9 +67,35 @@ export const SectionText = styled.p`
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 24px;
+    margin-right: 100px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+    margin-right: auto;
+  }
+`
+
+export const SectionButton = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  line-height: 40px;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: grid;
+    grid-template-columns: 1fr;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
